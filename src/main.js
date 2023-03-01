@@ -1,13 +1,11 @@
-import './App.css';
-function App() {
-  const canvas = document.getElementById("jsCanvas");
+const canvas = document.getElementById("jsCanvas");
 const ctx = canvas.getContext("2d");
 
 canvas.width = 1920;
 canvas.height = 1080;
 
 ctx.strokeStyle = "black";
-ctx.lineWidth = 7;
+ctx.lineWidth = 2.5;
 
 let painting = false;
 
@@ -37,11 +35,3 @@ if (canvas) {
     canvas.addEventListener("mouseup", stopPainting);
     canvas.addEventListener("mouseleave", stopPainting);
 }
-  return (
-    <div className="App">
-      <canvas id="jsCanvas" className="canvas"></canvas>
-    </div>
-  );
-}
-
-export default App;
